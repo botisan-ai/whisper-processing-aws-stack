@@ -1,0 +1,15 @@
+{
+  "version": "2.0",
+  "app_name": "whisper-processing-aws-stack",
+  "api_gateway_stage": "api",
+  "automatic_layer": false,
+  "lambda_functions": {
+    "api_handler": {
+      "lambda_memory_size": 512
+    },
+    "ProcessJob": {
+      "lambda_memory_size": 2048,
+      "lambda_timeout": 600
+    }
+  }
+}
